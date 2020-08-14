@@ -1,0 +1,10 @@
+def make_readable(seconds):
+	if seconds<=359999:
+		hours=seconds//3600
+		seconds=seconds%3600
+		minutes=seconds//60
+		seconds=seconds%60
+		second=seconds
+	return('{:02d}'.format(hours) + ':' +'{:02d}'.format(minutes) + ':' +'{:02d}'.format(second))
+    
+make_readable((82800))
